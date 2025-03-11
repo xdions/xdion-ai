@@ -23,20 +23,37 @@ a {
 
 .hero h1 {
     font-size: 2.5rem;
+    text-align: center;
 }
 
 .hero p {
     font-size: 1.2rem;
+    text-align: center;
 }
 
 .hero .btn {
     display: inline-block;
-    background-color: #6A0DAD;
-    color: white;
+    background-color: white;
+    color: #6A0DAD;
     padding: 10px 20px;
     font-size: 1rem;
     border-radius: 5px;
     margin-top: 20px;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+}
+
+.hero .btn.standout-btn {
+    background-color: white;
+    color: #6A0DAD;
+    font-weight: bold;
+    font-size: 1.2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.hero .btn:hover {
+    background-color: #4B0082;
+    color: white;
 }
 
 /* Features Section */
@@ -46,6 +63,8 @@ a {
     border-radius: 15px;
     margin: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    border: 2px solid #6A0DAD;
 }
 
 .features h2 {
@@ -55,9 +74,9 @@ a {
 }
 
 .feature-box {
-    background-color: #6A0DAD;
-    color: white;
-    border: 1px solid #B28DFF;
+    background-color: white;
+    color: #333333;
+    border: 2px solid #6A0DAD;
     border-radius: 10px;
     padding: 20px;
     margin-bottom: 20px;
@@ -67,7 +86,7 @@ a {
 }
 
 .feature-box span {
-    color: #B28DFF;
+    color: #6A0DAD;
     margin-right: 10px;
     font-size: 1.5rem;
 }
@@ -86,6 +105,46 @@ a {
     font-size: 1rem;
     border-radius: 5px;
     text-align: center;
+    transition: background-color 0.3s ease;
+    border: 2px solid #4B0082;
+}
+
+.features .btn:hover {
+    background-color: #4B0082;
+    color: white;
+}
+
+/* Winning Rate & Accuracy Claims Section */
+.accuracy {
+    background-color: white;
+    padding: 50px 20px;
+    border-radius: 15px;
+    margin: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    border: 2px solid #6A0DAD;
+}
+
+.accuracy h2 {
+    text-align: center;
+    color: #6A0DAD;
+    margin-bottom: 20px;
+}
+
+.accuracy p, .accuracy ul {
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+.accuracy ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+.accuracy li {
+    margin: 10px 0;
+    font-size: 1.1rem;
 }
 
 /* About XDION AI Section */
@@ -95,6 +154,8 @@ a {
     border-radius: 15px;
     margin: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    border: 2px solid #6A0DAD;
 }
 
 .about h2 {
@@ -102,18 +163,89 @@ a {
     color: #6A0DAD;
 }
 
-.about p {
+.about p, .about ul {
     font-size: 1.1rem;
+    text-align: center;
 }
 
 .about ul {
     list-style: none;
     padding: 0;
+    margin-top: 10px;
 }
 
 .about li {
     margin: 10px 0;
     font-size: 1.1rem;
+}
+
+/* Reviews Section */
+.reviews {
+    background-color: white;
+    padding: 50px 20px;
+    border-radius: 15px;
+    margin: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    border: 2px solid #6A0DAD;
+}
+
+.reviews h2 {
+    text-align: center;
+    color: #6A0DAD;
+    margin-bottom: 20px;
+}
+
+.review-box {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    max-width: 600px;
+    margin: 20px auto;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border: 2px solid #6A0DAD;
+}
+
+.review {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 15px;
+}
+
+.review img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.review-content {
+    background: #f8f9fa;
+    padding: 15px;
+    border-radius: 10px;
+    width: 100%;
+    border: 1px solid #6A0DAD;
+}
+
+.review-name {
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.review-follow {
+    color: blue;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.review-text {
+    margin: 5px 0;
+    font-size: 1rem;
+}
+
+.review-meta {
+    font-size: 12px;
+    color: gray;
 }
 
 /* Modal Styles */
@@ -185,15 +317,15 @@ a {
         font-size: 1rem;
     }
 
-    .features, .about {
+    .features, .accuracy, .reviews, .about {
         padding: 30px 10px;
     }
 
-    .feature-box {
+    .feature-box, .review {
         padding: 15px;
     }
 
-    .feature-box p, .about p, .about li {
+    .feature-box p, .review-text, .about p, .about li, .accuracy p, .accuracy li {
         font-size: 1rem;
     }
 }
