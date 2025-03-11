@@ -3,8 +3,8 @@ body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
+    background-color: #FFFFFF;
+    color: #333333;
 }
 
 a {
@@ -13,7 +13,7 @@ a {
 
 /* Header (Hero Section) */
 .hero {
-    background: linear-gradient(135deg, #001F3F, #FFD700);
+    background: linear-gradient(135deg, #6A0DAD, #4B0082);
     color: white;
     text-align: center;
     padding: 100px 20px;
@@ -31,7 +31,7 @@ a {
 
 .hero .btn {
     display: inline-block;
-    background-color: #FF4500;
+    background-color: #6A0DAD;
     color: white;
     padding: 10px 20px;
     font-size: 1rem;
@@ -50,14 +50,14 @@ a {
 
 .features h2 {
     text-align: center;
-    color: #001F3F;
+    color: #6A0DAD;
     margin-bottom: 20px;
 }
 
 .feature-box {
-    background-color: #001F3F;
+    background-color: #6A0DAD;
     color: white;
-    border: 1px solid #FFD700;
+    border: 1px solid #B28DFF;
     border-radius: 10px;
     padding: 20px;
     margin-bottom: 20px;
@@ -67,7 +67,7 @@ a {
 }
 
 .feature-box span {
-    color: #FFD700;
+    color: #B28DFF;
     margin-right: 10px;
     font-size: 1.5rem;
 }
@@ -80,50 +80,7 @@ a {
 .features .btn {
     display: block;
     margin: 20px auto;
-    background-color: #FF4500;
-    color: white;
-    padding: 10px 20px;
-    font-size: 1rem;
-    border-radius: 5px;
-    text-align: center;
-}
-
-/* Pricing Section */
-.pricing {
-    background-color: white;
-    padding: 50px 20px;
-    border-radius: 15px;
-    margin: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.pricing h2 {
-    text-align: center;
-    color: #001F3F;
-}
-
-.price-box {
-    background-color: #001F3F;
-    color: white;
-    padding: 20px;
-    border-radius: 10px;
-    margin: 20px 0;
-    text-align: center;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-}
-
-.price-box h3 {
-    margin: 0;
-}
-
-.price-box p {
-    font-size: 1.2rem;
-}
-
-.pricing .btn {
-    display: block;
-    margin: 20px auto;
-    background-color: #FF4500;
+    background-color: #6A0DAD;
     color: white;
     padding: 10px 20px;
     font-size: 1rem;
@@ -142,7 +99,7 @@ a {
 
 .about h2 {
     text-align: center;
-    color: #001F3F;
+    color: #6A0DAD;
 }
 
 .about p {
@@ -228,11 +185,11 @@ a {
         font-size: 1rem;
     }
 
-    .features, .pricing, .about {
+    .features, .about {
         padding: 30px 10px;
     }
 
-    .feature-box, .price-box {
+    .feature-box {
         padding: 15px;
     }
 
